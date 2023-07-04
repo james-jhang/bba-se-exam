@@ -1,4 +1,4 @@
-const UserRepository = require("../../usecase/repository/user.repository");
+const UserRepository = require("../../usecase/user.repository");
 
 module.exports = class InMemoryUserRepository extends UserRepository {
     constructor() {
@@ -7,15 +7,15 @@ module.exports = class InMemoryUserRepository extends UserRepository {
     }
 
     findAll() {
-        return this.users
+        return this.users;
     }
     findByID(id) {
-        return this.users.find(user => user.id === id)
+        return this.users.find(user => user.id === id);
     }
     save(users) {
-        this.users = users
+        this.users = users;
     }
     delete(id) {
-        this.users = this.users.filter(user => user.id !== id)
+        this.users = this.users.filter(user => user.id !== id);
     }
 }

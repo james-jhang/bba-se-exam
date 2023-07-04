@@ -1,8 +1,7 @@
-const ListAllUsers = require("./usecase/query/list-all-users.usecase")
+const ListAllUsers = require("./usecase/query/list-all-users.usecase");
 
-const { getUserRepository } = require('./repository.factory')
+const { getUserRepository } = require('./repository.factory');
 
 exports.ListAllUsersUseCase = function ListAllUsersUseCase() {
-    return new ListAllUsers(getUserRepository())
+    return new ListAllUsers(getUserRepository());
 }
-
