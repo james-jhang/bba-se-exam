@@ -1,6 +1,6 @@
 ## Big Bang Academy SE Exam Project
 
-This is the project for the Big Bang Academy exam. This project contains two parts: server(bbaserver) and web app(bbaweb), where bbaserver is written in Node.js, and bbaweb is written in React.js (with Vite).
+This project is for the Big Bang Academy exam. There are two parts: server(bbaserver) and web app(bbaweb), where bbaserver is written in Node.js, and bbaweb is written in React.js (with Vite).
 
 You can run the command below to install the necessary packages for each project and run the server. The default host is http://localhost:3000.
 
