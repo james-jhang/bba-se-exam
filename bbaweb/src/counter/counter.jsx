@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Button, Card, Text, Metric, Grid, Col } from "@tremor/react";
 import "./counter.css"
 
 export default function Counter() {
@@ -10,10 +11,16 @@ export default function Counter() {
         setCount(count - 1);
     }
     return (
-        <div className="counter">
-            <p>{count}</p>
-            <button onClick={increase}>Increase</button>
-            <button onClick={decrease}>Decrease</button>
-        </div>
+        <Grid numItems={2} className="gap-2 max-w-screen-sm">
+            <Col numColSpan={2}>
+                <Card>
+                    <Metric>
+                        {count}
+                    </Metric>
+                </Card>
+            </Col>
+            <Button onClick={increase}>Increase</Button>
+            <Button onClick={decrease}>Decrease</Button>
+        </Grid>
     )
 }

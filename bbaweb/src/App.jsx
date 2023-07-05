@@ -16,7 +16,7 @@ export default function Root() {
           </ul>
         </nav>
       </div>
-      <div id="detail">
+      <div id="detail" className="container mx-auto p-12">
         <Outlet />
       </div>
     </>
