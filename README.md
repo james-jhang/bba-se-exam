@@ -1,4 +1,4 @@
-## Big Bang Academy SE Exam Project
+## SE Exam Project
 
 This project is for the Big Bang Academy exam. There are two parts: server(bbaserver) and web app(bbaweb), where bbaserver is written in Node.js, and bbaweb is written in React.js (with Vite).
 
