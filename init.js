@@ -17,4 +17,6 @@ execCmd("npm", ["install", "--no-audit"], { cwd: "./bbaweb" })
     .then(() => execCmd("npm", ["run", "build"], { cwd: "./bbaweb" }))
     .then(() => execCmd("npm", ["install", "--no-audit"], { cwd: "./bbaserver" }))
     .then(() => execCmd("npm", ["run", "dev"], { cwd: "./bbaserver" }))
-    .catch(console.log);
+    .catch((err)=>{
+        console.log(err.toString('utf8'));
+    });

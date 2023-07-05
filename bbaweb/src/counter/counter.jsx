@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button, Card, Text, Metric, Grid, Col } from "@tremor/react";
+import { Button, Card, Metric, Grid, Col } from "@tremor/react";
 import "./counter.css"
 
 export default function Counter() {
