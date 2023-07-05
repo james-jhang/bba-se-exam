@@ -11,24 +11,27 @@ export default function UserList() {
     return (
         <Card className="max-w-screen-sm">
             <Title>User List</Title>
-            <Table className="mt-5">
-                <TableHead>
-                    <TableRow>
-                        <TableHeaderCell>ID</TableHeaderCell>
-                        <TableHeaderCell>Name</TableHeaderCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {data.users.map((user) => (
-                        <TableRow key={user.id}>
-                            <TableCell>{user.id}</TableCell>
-                            <TableCell>
-                                <Text>{user.name}</Text>
-                            </TableCell>
+            {/* https://github.com/tremorlabs/tremor/issues/75#issuecomment-1327380036 */}
+            <div className="[&_>_div]:max-h-96 [&_th]:bg-white">
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableHeaderCell>ID</TableHeaderCell>
+                            <TableHeaderCell>Name</TableHeaderCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+                    </TableHead>
+                    <TableBody>
+                        {data.users.map((user) => (
+                            <TableRow key={user.id}>
+                                <TableCell>{user.id}</TableCell>
+                                <TableCell>
+                                    <Text>{user.name}</Text>
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </div>
         </Card>
     )
 }
