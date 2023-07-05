@@ -1,6 +1,6 @@
 {
   "name": "bbaweb",
-  "private": true,
+  "description": "A simple web app for the Big Bang Academy SE exam.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
